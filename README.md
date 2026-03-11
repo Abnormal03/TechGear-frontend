@@ -1,4 +1,5 @@
 ⚙️ Tech Gear - Frontend
+
 The client-side application for Tech Gear, a modern platform for browsing and managing high-end technology products. This project is built with React and integrates with a Node.js/Express backend using JWT authentication.
 
 🚀 Features
