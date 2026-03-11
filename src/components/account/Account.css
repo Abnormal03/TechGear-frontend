@@ -1,0 +1,111 @@
+.sideBar {
+  max-width: 400px;
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  height: fit-content;
+}
+
+.sidebar-list li {
+  background-color: #f2f2f4;
+  height: 50px;
+  margin: 10px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+.account {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+}
+
+.myproducts {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.myproducts .product {
+  max-width: 350px;
+  max-height: 500px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.myproducts .product img {
+  height: 200px;
+  width: 300px;
+}
+
+.product .icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: auto;
+  font-size: 25px;
+  color: gray;
+  border: 2px solid;
+  border-radius: 20px;
+}
+
+.add-product-portal form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+form div{
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    gap: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+form div input {
+    align-self: flex-end;
+    width: 100%;
+}
+
+.add-product-portal button{
+    margin-left: 50px;
+    width: 100px;
+}
+
+.add-product-portal .error{
+  color: red;
+}
+
+.products-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.delete-product{
+  position: absolute;
+  bottom: 10px;
+  top: auto;
+  left: auto;
+  right: 10px;
+  margin-top: 10px;
+}

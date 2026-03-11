@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Story+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    width: 100%;
+}
+
+body{
+    background: #F2F2F4;
+    font-family: "Playfair Display", serif;
+    width: 100%;
+}
+
+/*header design*/
+.header{
+    background: #2C3343;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    min-height: 70px;
+    width: 100%;
+}
+
+
+.header a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+input {
+    width: 40%;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+input:focus{
+    border-color: none;
+    outline: none;
+}
+
+.menuBar {
+    display: none;
+}
+
+img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+p, h3{
+    cursor: default;
+}
+
+
+/*product design*/
+
+.productsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+}
+
+.product {
+    height: auto;
+    max-width: 30%;
+    overflow: hidden;
+    background: white;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0 gainsboro;
+}
+
+
+
+.product h3,h2{
+    margin: 10px 5px;
+}
+
+.product .description{
+    color: gray;
+    margin: 0 5px;
+}
+
+.category{
+    margin: 0 5px;
+    padding: 5px;
+    width:fit-content;
+    box-shadow: 0px 5px 5px 0 gainsboro;
+}
+
+button{
+    padding: 10px;
+    background: #2853A1;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+
+.AddBtn{
+    margin-left: 35%;
+    margin-top: 10px;
+}
+
+button:hover{
+    box-shadow: 0 2px 5px 0 #2853A1;
+}
+
+
+/* home page design*/
+
+.home{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+
+
+
+/*categories design*/
+.categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 50px;
+    margin-left: 50px;
+    background: white;
+    width: max-content;
+    min-width: 300px;
+    height: fit-content;
+    padding: 5px;
+    gap: 10px;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    position:unset(10,20);
+}
+
+.categories div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+    font-size: 18px;
+}
+
+
+
+
+
+.categories input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+/* cart design*/
+
+.cartContainer{ 
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+.cartProduct{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 900px; */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0  gainsboro;
+    margin-bottom: 20px;
+}
+
+.cartProduct img{
+    width: 200px ;
+    height: 100px; 
+    border-radius: 5px;
+}
+
+.cartProduct .quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkout{
+    background: white;
+    max-width: fit-content;
+    padding: 20px;
+    height: max-content;
+    border-radius: 10px;
+}
+
+.checkoutBtn{
+    margin-left: 40%;
+    margin-top: 20px;
+}
+
+.priceQuantity{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*product details design*/
+.productDetailContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.productDetail{
+    background: white;
+    width: 50%;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:sticky;
+    border-radius: 20px;
+}
+
+.productDetail img{
+    width: 100%;
+    height: max-content;
+    max-height: 500px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 2px 0px gray;
+    border-radius: 20px;
+}
+
+.productDetail button{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.productDetail .closeBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+/*history detail design*/
+.checkoutContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.checkoutDetail{
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     justify-content: space-between;
+     width: 40%;
+     background: white;
+     padding: 30px;
+     border-radius: 20px;
+     gap: 10px;
+}
+
+.nonDetail{
+    display: flex;
+    flex-direction: row;
+    transition: .3s ease;
+}
+
+.nonDetail:hover{
+    background-color: aliceblue;
+}
+
+.formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.signup{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 350px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #2853A1;
+    box-shadow: 0 5px 5px 2px gray;
+    border-radius: 20px;
+}
+
+.signup input{
+    width: 90%;
+    margin: 10px;
+}
+
+.signup label {
+    align-self: flex-start;
+    margin-left: 30px;
+}
+
+.signup p{
+    font-size: 30px;
+    color: #2853A1;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.signup .error{
+    width: 90%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    color: red;
+}
+
+.signup .loading{
+    width: 90%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #2853A1;
+    border-radius: 10px;
+    color: #2853A1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:1340px){
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .product{
+        max-width: fit-content;
+    }
+    .productsContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }  
+    .categories{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin: 5px;
+        overflow-y: scroll;
+        max-width: 100%;
+        padding-right: 10px;
+    }
+
+    .categories div{
+        gap: 50px;
+        border: 1px solid;
+        padding: 0px 10px;
+        border-radius: 10px;
+    }
+    .productDetail .closeBtn{
+        left: 1fr;
+    }
+    .checkoutDetail{
+        width: 90%;
+    }
+    
+}
+@media(max-width:560px){
+    .productDetail{
+        width: 90%;
+    }
+
+    .checkoutDetail{
+        width: 100%;
+    }
+
+    .menuBar{
+        display: block;
+    }
+
+    .header .hiddenMenus{
+        display: none;
+    }
+
+    .header .showMenu{
+        display: flex;
+        flex-direction: column;
+        background-color: #2C3343;
+        padding: 20px;
+        align-items: start;
+        position: absolute;
+        left:auto;
+        right: 5px;
+        top: 55px;
+        border-radius: 10px;
+        gap: 10px;
+        z-index: 2000;
+    }
+
+    .checkout{
+        max-width: none;
+        width: 90%;
+    }
+
+    .cartContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .cartProduct{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+}
