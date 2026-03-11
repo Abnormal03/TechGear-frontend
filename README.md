@@ -28,7 +28,7 @@ API Handling: Fetch API / Axios
 Clone the repository:
 
 Bash
-git clone https://github.com/your-username/tech-gear-frontend.git
+git clone https://github.com/Abnormal03/tech-gear-frontend.git
 cd tech-gear-frontend
 Install dependencies:
 
