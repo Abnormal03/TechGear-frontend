@@ -1,5 +1,3 @@
-Since this is the Front End for "Tech Gear" (which sounds like an e-commerce or product listing site), your README should focus on the tech stack, how to handle the authentication state you just fixed, and how to get the project running locally.
-
 ⚙️ Tech Gear - Frontend
 The client-side application for Tech Gear, a modern platform for browsing and managing high-end technology products. This project is built with React and integrates with a Node.js/Express backend using JWT authentication.
 
